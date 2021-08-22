@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-10 font-semibold">Let's get some money <span
+                class="text-yellow-500">Bangladesh
+                Bank</span></h1>
+
+    </header>
+    <main class="w-3/4 mx-auto ">
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-blue-400 p-5 rounded">
+                    <h3 class="text-3xl">Deposite</h3>
+                    <h3 class="text-2xl"> $<span id="deposit-total">00</span></h3>
+
+                </div>
+                <div class="bg-green-400 p-5 rounded">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h3 class="text-2xl">$<span id="withdraw-total">00</span> </h3>
+
+                </div>
+                <div class="bg-yellow-400 p-5 rounded">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h3 class="text-2xl"> $<span id="balance-total">1200</span></h3>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- deposite and withdraw -->
+        <section class="mt-4">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-red-400 p-5 rounded">
+                    <h3 class="text-2xl mb-2 text-white">Please Deposit </h3>
+                    <div>
+
+                        <input id="deposit-amount" class="border block border-gray-400 rounded w-3/4 p-2 mb-3 "
+                            type="text" placeholder="$ amount you want to deposit">
+
+
+                        <button id="deposit-btn"
+                            class="bg-yellow-500 font-medium rounded px-4 text-white py-2">Deposit</button>
+
+                    </div>
+                </div>
+                <!-- withdraw  -->
+                <div class="bg-purple-400 p-5 rounded">
+                    <h3 class="text-2xl mb-2 text-white">Please Withdraw </h3>
+                    <div>
+
+                        <input id="withdraw-amount" class="border block border-gray-400 rounded w-3/4 p-2 mb-3 "
+                            type="text" placeholder="$ amount you want to withdraw">
+
+
+                        <button id="withdraw-btn"
+                            class="bg-yellow-500 font-medium rounded px-4 text-white py-2">Withdraw</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/Home.js"></script>
+</body>
+
+</html>
